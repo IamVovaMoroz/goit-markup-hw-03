@@ -223,7 +223,9 @@ text-decoration: none;
 
 /* Сторiнка Портфолио шрифти */
 
-.filter-button:focus{background-color: var(--button-text-colour); color: var(--second-text-colour);}
+/* .navigat .studio:hover, .navigat .studio:focus {color: var(--button-text-colour);} */
+
+.filter-button:focus, .filter-button:hover{background-color: var(--button-text-colour); color: var(--second-text-colour);}
 
 .filter-button{
     background-color: var(--button-backgroud-colour);
@@ -250,9 +252,9 @@ text-decoration: none;
       line-height: 1.88;  
     }
 
-    
+    .sample-img{display: block;}
 
-    .block-sample{border: 1px solid var(--filter-border-colour);}
+    .about-blocks{border: 1px solid var(--filter-border-colour);}
 
     /* Задамо margin, padding */
 
