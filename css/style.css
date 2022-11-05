@@ -517,6 +517,9 @@ ul{margin:0; padding:0}
 
     .link-clients{fill:var(--clients-border-colour); width: 106px; height: 60px; display: flex; align-items: center; justify-content: center;}
 
+    .link-clients:hover,  .link-clients:focus{fill: var(--button-text-colour); }
+    .item-clients:hover, .item-clients:focus { border: 1px solid var(--button-text-colour);}
+
               
     /* <ul class="ul-clients ">
           <ul class="ul-clients">
