@@ -428,7 +428,7 @@ ul{margin:0; padding:0}
 
 /* .features-item{width: calc(100% - 60px) / 3;}    та же операция для работы с калькулятором. 60px маржины сумарно которые вычитаются  */ 
 
-.features-item:not(:last-child) {margin-right: 30px;}
+.
 
 .samples{display: flex; flex-wrap: wrap;}
 
@@ -455,49 +455,75 @@ ul{margin:0; padding:0}
     rgba(47,48,58,0.4)),url(../img/hero-min.jpg);  
 
 }
+
+
+.features-item:not(:last-child) {margin-right: 30px;}
+
 .ul-features, {display: flex; justify-content: center;}
 
+
+
+
 .features-icon{width: 270px; height: 120px; margin-bottom: 30px; background-color: var(--button-backgroud-colour) ; fill: currentColor; border-radius: 4px;}
+
+
+
 .features-icon:last-child{margin-right: 0;}
 
- 
+/* <li class="features-item"><svg class="features-icon" height="70" width="65.32"><use href="./img/sprite-icon.svg#icon-radar"></use></svg><h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+<p class="features-text">
+  Ідейні міркування, i навіть початок повсякденної роботи з формування
+  позиції.
+</p></li> */
+
+
+
+
 
 
 
 
         /* <ul class="social-icons set">
-              <li class="social-item"><a href="" class="social-link"></a></li>
+
+               <li class="social-item"><a href="" class="social-link">
+                  <svg class="social-icon" width="10" height="20">
+                    <use href="./img/sprite-icon.svg#icon-facebook"></use>
+                    </svg>
+
               <li class="social-item"><a href="" class="social-link"></a></li>
               <li class="social-item"><a href="" class="social-link"></a></li>
               <li class="social-item"><a href="" class="social-link"></a></li></ul> */
 
-              
-       .social-icons{display: flex; justify-content: center;} 
-       
-       .social-item{width: 44px; height: 44px; background-color:var(--second-text-colour) ; margin-right: 10px; outline: 1px solid orange; margin-top: 16px; padding-bottom: 30px;
-    border-radius: 50%; fill: currentColor;
-    }
 
+              
+    .social-icons{display: flex; justify-content: center;} 
+       
+    .social-item{ margin-right: 10px; outline: 1px solid orange; margin-top: 16px; 
+     
+    }
+    .social-link{fill: var(--clients-border-colour); width: 44px; height: 44px; background-color:var(--second-text-colour) ; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 
 
     .social-item:last-child{margin-right:0; }
 
-    .social-link{width: 100%;
-    height: 100%;
-    
-    display: inline-block;
-    
-}
+    .social-link:hover{background-color:var(--button-text-colour) ; fill: var(--second-text-colour);}
 
 
 
 
 
-              .item-clients{width: 170px; height: 92px; border: 1px solid var(--clients-border-colour); border-radius: 4px;}
+
+    .item-clients{ border: 1px solid var(--clients-border-colour); border-radius: 4px; padding: 16px 32px;}
+
+    .link-clients{fill:var(--clients-border-colour); width: 106px; height: 60px; display: flex; align-items: center; justify-content: center;}
 
               
     /* <ul class="ul-clients ">
-          <li class="item-clients"><a href="" class="link-clients"></a></li>
+          <ul class="ul-clients">
+          <li class="item-clients"><a href="" class="link-clients"><svg class="client-icon" width="41" height="46.7">
+            <use href="./img/sprite-icon.svg#icon-company1"></use>
+          </svg></a></li>
+
           <li class="item-clients"><a href="" class="link-clients"></a></li>
           <li class="item-clients"><a href="" class="link-clients"></a></li>
           <li class="item-clients"><a href="" class="link-clients"></a></li>
