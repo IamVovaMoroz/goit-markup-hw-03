@@ -6,6 +6,8 @@
 --color-rgba: rgba(255, 255, 255, 0.6);
 --button-backgroud-colour: #F5F4FA;
 --filter-border-colour: #EEEEEE;
+--clients-border-colour:#AFB1B8;
+
 }
 
 /* Border box и наследование всем элементам*/
@@ -84,7 +86,7 @@ letter-spacing: 0.03em;
 .hero-title{ color: var(--second-text-colour); 
 
 }
-.hero{background-color: var(--secondary-background-colour)}
+
 .hero-button{background: var(--button-text-colour); color: var(--second-text-colour); cursor: pointer;
 border-radius: 4px;
 padding: 10px 32px;
@@ -174,7 +176,12 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 
+
+
 }
+
+
+
 .team-title{padding-bottom: 50px; margin: 0; }
 
 .team >ul{ margin: 0;padding: 0;}
@@ -219,6 +226,24 @@ line-height: 1.7;
 font-style: normal;
 text-decoration: none; 
 }
+
+
+
+/* Постійні клієнти */
+
+
+.title-clients{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    }
+
+    
+
 
 
 /* Сторiнка Портфолио шрифти */
@@ -268,8 +293,8 @@ text-decoration: none;
 
     .about-title{margin-bottom: 50px; margin-top: 0; }
 
-    .about{padding-bottom: 94px;}
-    .team{padding-bottom: 94px; padding-top: 94px;}
+    .about, .ul-clients{padding-bottom: 94px;}
+    .team{padding-bottom: 94px; padding-top: 94px; background-color: var(--button-backgroud-colour);}
 
     .about-employees{padding-top: 30px; padding-bottom: 30px;}
 
@@ -363,11 +388,43 @@ ul{margin:0; padding:0}
 
 .logo-main{display: block; }
 
-.ul-features{display: flex; list-style: none; }
+.ul-features, .ul-clients{display: flex; list-style: none;  }
+
+/* .item-clients{margin-right: 30px;} */
+
+.item-clients:not(:last-child) {margin-right: 30px;}
+
+/* .ul-clients{justify-content: center;} */
+
+.ul-clients{justify-content: center;}
 
 
 
-.features-item{width: 270px;}
+
+/* .link-clients{outline: 1px solid orange;} */
+
+/*  features icons */
+
+
+
+
+
+/* .features-item{width: 270px;}
+.features-item::before{
+    display: inline-block;
+ content:'';
+ width: 270px; 
+ height: 120px;  
+ outline: 1px solid orange;
+ background-color: var(--button-backgroud-colour);
+ background-position: center;
+
+}
+
+
+.features-item::before { background-image: url(../img/radar.svg); background-size: contain; background-repeat: no-repeat;  } */
+
+
 
 /* .features-item{width: calc(100% - 60px) / 3;}    та же операция для работы с калькулятором. 60px маржины сумарно которые вычитаются  */ 
 
@@ -378,4 +435,81 @@ ul{margin:0; padding:0}
 .adflex{display: flex;}
 
 .filter-page{justify-content: center;}
+
+/* Фон */
+
+.hero{
+   
+    background-color: var(--secondary-background-colour);
+    max-width: 1600px;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 2px solid orange; */
+    /* background-image: linear-gradient(to right rgba(47, 48, 58, 0.4));
+    background-image: url(../img/hero-min.jpg); */
+    background: linear-gradient(to right, rgba(47,48,58,0.4),
+    rgba(47,48,58,0.4)),url(../img/hero-min.jpg);  
+
+}
+.ul-features, {display: flex; justify-content: center;}
+
+.features-icon{width: 270px; height: 120px; margin-bottom: 30px; background-color: var(--button-backgroud-colour) ; fill: currentColor; border-radius: 4px;}
+.features-icon:last-child{margin-right: 0;}
+
+ 
+
+
+
+
+        /* <ul class="social-icons set">
+              <li class="social-item"><a href="" class="social-link"></a></li>
+              <li class="social-item"><a href="" class="social-link"></a></li>
+              <li class="social-item"><a href="" class="social-link"></a></li>
+              <li class="social-item"><a href="" class="social-link"></a></li></ul> */
+
+              
+       .social-icons{display: flex; justify-content: center;} 
+       
+       .social-item{width: 44px; height: 44px; background-color:var(--second-text-colour) ; margin-right: 10px; outline: 1px solid orange; margin-top: 16px; padding-bottom: 30px;
+    border-radius: 50%; fill: currentColor;
+    }
+
+
+
+    .social-item:last-child{margin-right:0; }
+
+    .social-link{width: 100%;
+    height: 100%;
+    
+    display: inline-block;
+    
+}
+
+
+
+
+
+              .item-clients{width: 170px; height: 92px; border: 1px solid var(--clients-border-colour); border-radius: 4px;}
+
+              
+    /* <ul class="ul-clients ">
+          <li class="item-clients"><a href="" class="link-clients"></a></li>
+          <li class="item-clients"><a href="" class="link-clients"></a></li>
+          <li class="item-clients"><a href="" class="link-clients"></a></li>
+          <li class="item-clients"><a href="" class="link-clients"></a></li>
+          <li class="item-clients"><a href="" class="link-clients"></a></li>
+          <li class="item-clients"><a href="" class="link-clients"></a></li>
+        </ul> */
+
+        /* .phone-set{width: 270px; height: 120px;}  */
+    
+    /* width: 65.32px; height: 70px;} */
+
+
+    /* 
+   
 
