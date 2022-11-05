@@ -428,7 +428,7 @@ ul{margin:0; padding:0}
 
 /* .features-item{width: calc(100% - 60px) / 3;}    та же операция для работы с калькулятором. 60px маржины сумарно которые вычитаются  */ 
 
-.
+
 
 .samples{display: flex; flex-wrap: wrap;}
 
@@ -498,9 +498,7 @@ ul{margin:0; padding:0}
               
     .social-icons{display: flex; justify-content: center;} 
        
-    .social-item{ margin-right: 10px; outline: 1px solid orange; margin-top: 16px; 
-     
-    }
+    .social-item{ margin-right: 10px; margin-top: 16px; }
     .social-link{fill: var(--clients-border-colour); width: 44px; height: 44px; background-color:var(--second-text-colour) ; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 
 
@@ -508,6 +506,10 @@ ul{margin:0; padding:0}
 
     .social-link:hover{background-color:var(--button-text-colour) ; fill: var(--second-text-colour);}
 
+
+
+
+    .social-item{ margin-right: 10px; margin-top: 16px; }
 
 
 
@@ -520,7 +522,9 @@ ul{margin:0; padding:0}
     .link-clients:hover,  .link-clients:focus{fill: var(--button-text-colour); }
     .item-clients:hover, .item-clients:focus { border: 1px solid var(--button-text-colour);}
 
-              
+         
+    
+
     /* <ul class="ul-clients ">
           <ul class="ul-clients">
           <li class="item-clients"><a href="" class="link-clients"><svg class="client-icon" width="41" height="46.7">
