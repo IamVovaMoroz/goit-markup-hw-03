@@ -51,6 +51,7 @@ padding-right: 15px;
 body { background-color: var(--second-text-colour); color:var(--main-text-colour);
 font-family: Roboto, sans-serif;
 letter-spacing: 0.03em;
+
 }
 
 
@@ -401,11 +402,6 @@ ul{margin:0; padding:0}
 
 
 
-/* .link-clients{outline: 1px solid orange;} */
-
-/*  features icons */
-
-
 
 
 
@@ -448,9 +444,6 @@ ul{margin:0; padding:0}
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid orange; */
-    /* background-image: linear-gradient(to right rgba(47, 48, 58, 0.4));
-    background-image: url(../img/hero-min.jpg); */
     background: linear-gradient(to right, rgba(47,48,58,0.4),
     rgba(47,48,58,0.4)),url(../img/hero-min.jpg);  
 
@@ -459,7 +452,7 @@ ul{margin:0; padding:0}
 
 .features-item:not(:last-child) {margin-right: 30px;}
 
-.ul-features, {display: flex; justify-content: center;}
+.ul-features {display: flex; justify-content: center;}
 
 
 
@@ -469,16 +462,6 @@ ul{margin:0; padding:0}
 
 
 .features-icon:last-child{margin-right: 0;}
-
-/* <li class="features-item"><svg class="features-icon" height="70" width="65.32"><use href="./img/sprite-icon.svg#icon-radar"></use></svg><h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-<p class="features-text">
-  Ідейні міркування, i навіть початок повсякденної роботи з формування
-  позиції.
-</p></li> */
-
-
-
-
 
 
 
@@ -494,7 +477,7 @@ ul{margin:0; padding:0}
               <li class="social-item"><a href="" class="social-link"></a></li>
               <li class="social-item"><a href="" class="social-link"></a></li></ul> */
 
-
+    /* .title-clients{height: 42px;} */
               
     .social-icons{display: flex; justify-content: center;} 
        
@@ -513,33 +496,60 @@ ul{margin:0; padding:0}
 
 
 
-
+    
 
     .item-clients{ border: 1px solid var(--clients-border-colour); border-radius: 4px; padding: 16px 32px;}
 
     .link-clients{fill:var(--clients-border-colour); width: 106px; height: 60px; display: flex; align-items: center; justify-content: center;}
 
-    .link-clients:hover,  .link-clients:focus{fill: var(--button-text-colour); }
-    .item-clients:hover, .item-clients:focus { border: 1px solid var(--button-text-colour);}
+    .item-clients  .link-clients:hover .client-icon {fill: var(--button-text-colour);   }
+    .item-clients:hover, .item-clients:focus  {border: 1px solid var(--button-text-colour); }
 
          
+    /* Footer social contacts */
+
     
+    .foot-social-icons{display: flex; justify-content: center;} 
+       
+    .foot-social-item{ margin-right: 10px; margin-top: 16px; }
+    .foot-social-link{fill: var(--second-text-colour); width: 44px; height: 44px; background-color: rgba(255, 255, 255, 0.1); ; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 
-    /* <ul class="ul-clients ">
-          <ul class="ul-clients">
-          <li class="item-clients"><a href="" class="link-clients"><svg class="client-icon" width="41" height="46.7">
-            <use href="./img/sprite-icon.svg#icon-company1"></use>
-          </svg></a></li>
 
-          <li class="item-clients"><a href="" class="link-clients"></a></li>
-          <li class="item-clients"><a href="" class="link-clients"></a></li>
-          <li class="item-clients"><a href="" class="link-clients"></a></li>
-          <li class="item-clients"><a href="" class="link-clients"></a></li>
-          <li class="item-clients"><a href="" class="link-clients"></a></li>
-        </ul> */
+    .foot-social-item:last-child{margin-right:0; }
 
-        /* .phone-set{width: 270px; height: 120px;}  */
-    
-    
-   
+    .foot-social-link:hover, .foot-social-link:focus {background-color:var(--button-text-colour) ;}
 
+    .foot-social-item{ margin-right: 10px; margin-top: 16px; }
+
+  .foot-title{color: var(--second-text-colour);   height: 16px;}
+
+
+/* Добавляем иконку через Before. Не может изменять цвет при hovere */
+
+/* .auth-email::before{
+  content:"";  
+  display: inline-block;
+width: 16px;
+height: 12px;
+background-image: url(../img/email-icon.svg);
+margin-right: 10px;
+/* vertical-align: middle; */
+/* }
+.auth-email{display: flex; align-items: center; }   */ 
+  
+  
+.auth-email, .auth-tel{display: flex; align-items: center;}
+
+.icon-email, .icon-phone{margin-right: 10px; fill:var(--article-text-colour);}
+
+.auth-email:hover .icon-email {fill:var(--button-text-colour);}
+
+.auth-tel:hover .icon-phone {fill:var(--button-text-colour);}
+.li-phone:hover{fill:var(--button-text-colour);}
+
+
+
+
+.block-sample:hover{border: 1px solid #EEEEEE; 
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+.block-sample{box-sizing: border-box;}
