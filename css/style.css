@@ -449,12 +449,12 @@ ul{margin:0; padding:0}
 
 
 
-.ul-features {display: flex; justify-content: center; text-align: center; }
+.ul-features {display: flex; justify-content: center; }
 
 
 
 
-.features-block{ width: 270px; height: 120px;  background-color: var(--button-backgroud-colour) ; margin-bottom: 30px ; border-radius: 4px; }
+.features-block{ width: 270px; height: 120px;  background-color: var(--button-backgroud-colour) ; margin-bottom: 30px ; border-radius: 4px; padding-top: 25px; text-align: center; }
 
 .features-item:not(:last-child) {margin-right: 30px; }
 
