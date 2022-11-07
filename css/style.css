@@ -414,13 +414,8 @@ ul{margin:0; padding:0}
  outline: 1px solid orange;
  background-color: var(--button-backgroud-colour);
  background-position: center;
-
 }
-
-
 .features-item::before { background-image: url(../img/radar.svg); background-size: contain; background-repeat: no-repeat;  } */
-
-
 
 /* .features-item{width: calc(100% - 60px) / 3;}    та же операция для работы с калькулятором. 60px маржины сумарно которые вычитаются  */ 
 
@@ -450,34 +445,25 @@ ul{margin:0; padding:0}
 }
 
 
-.features-item:not(:last-child) {margin-right: 30px;}
+/* features иконки  */
+
+
 
 .ul-features {display: flex; justify-content: center;}
 
+.features-icon{padding-bottom: 25px; padding-top: 25px; padding-right: 100px; padding-left: 100px; }
 
 
+.features-block{ width: 270px; height: 120px;  background-color: var(--button-backgroud-colour) ; margin-bottom: 30px ; border-radius: 4px; }
 
-.features-icon{width: 270px; height: 120px; margin-bottom: 30px; background-color: var(--button-backgroud-colour) ; fill: currentColor; border-radius: 4px;}
+.features-item:not(:last-child) {margin-right: 30px; }
+
+.features-item:last-child{margin-right: 0; }
+
+.features-icon{}
 
 
-
-.features-icon:last-child{margin-right: 0;}
-
-
-
-
-        /* <ul class="social-icons set">
-
-               <li class="social-item"><a href="" class="social-link">
-                  <svg class="social-icon" width="10" height="20">
-                    <use href="./img/sprite-icon.svg#icon-facebook"></use>
-                    </svg>
-
-              <li class="social-item"><a href="" class="social-link"></a></li>
-              <li class="social-item"><a href="" class="social-link"></a></li>
-              <li class="social-item"><a href="" class="social-link"></a></li></ul> */
-
-    /* .title-clients{height: 42px;} */
+    /* social иконки работников */
               
     .social-icons{display: flex; justify-content: center;} 
        
@@ -490,12 +476,10 @@ ul{margin:0; padding:0}
     .social-link:hover{background-color:var(--button-text-colour) ; fill: var(--second-text-colour);}
 
 
-
-
     .social-item{ margin-right: 10px; margin-top: 16px; }
 
 
-
+     /* Наши клиенты иконки */
     
 
     .item-clients{ border: 1px solid var(--clients-border-colour); border-radius: 4px; padding: 16px 32px;}
@@ -536,7 +520,9 @@ margin-right: 10px;
 /* vertical-align: middle; */
 /* }
 .auth-email{display: flex; align-items: center; }   */ 
-  
+
+
+ /* Иконки в блоке навигации  */
   
 .auth-email, .auth-tel{display: flex; align-items: center;}
 
@@ -548,7 +534,7 @@ margin-right: 10px;
 .li-phone:hover{fill:var(--button-text-colour);}
 
 
-
+/* Ховер на портфолио */
 
 .block-sample:hover{border: 1px solid #EEEEEE; 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
