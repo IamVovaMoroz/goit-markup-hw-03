@@ -468,7 +468,7 @@ ul{margin:0; padding:0}
     .social-icons{display: flex; justify-content: center;} 
        
     .social-item{ margin-right: 10px; margin-top: 16px; }
-    .social-link{fill: var(--clients-border-colour); width: 44px; height: 44px; background-color:var(--second-text-colour) ; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+    .social-link{fill: var(--clients-border-colour); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 
 
     .social-item:last-child{margin-right:0; }
@@ -493,9 +493,9 @@ ul{margin:0; padding:0}
     /* Footer social contacts */
 
     
-    .foot-social-icons{display: flex; justify-content: center;} 
+    .foot-social-icons{display: flex; justify-content: center; } 
        
-    .foot-social-item{ margin-right: 10px; margin-top: 16px; }
+    .foot-social-item{ margin-right: 10px; margin-top: 20px; }
     .foot-social-link{fill: var(--second-text-colour); width: 44px; height: 44px; background-color: rgba(255, 255, 255, 0.1); ; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 
 
@@ -503,9 +503,13 @@ ul{margin:0; padding:0}
 
     .foot-social-link:hover, .foot-social-link:focus {background-color:var(--button-text-colour) ;}
 
-    .foot-social-item{ margin-right: 10px; margin-top: 16px; }
+    
 
-  .foot-title{color: var(--second-text-colour);   height: 16px;}
+  .foot-title{color: var(--second-text-colour);   height: 16px; margin: 0; }
+
+  .foot-social-links{margin-left: 72px; padding-top: 12px;  }
+  
+  foot-social-item
 
 
 /* Добавляем иконку через Before. Не может изменять цвет при hovere */
@@ -538,4 +542,4 @@ margin-right: 10px;
 
 .block-sample:hover{border: 1px solid #EEEEEE; 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
-.block-sample{box-sizing: border-box;}
+.block-sample{box-sizing: border-box; margin-right: 28px; }
